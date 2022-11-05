@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        .intro
+        {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            border-radius: 40px;
+            box-shadow: 5px 5px 5px 5px #888;
+            background: #333;;
+        }
+        h1{
+            font-size: 50px;
+            color: #fff;
+            font-weight: 900;
+            text-align: center;
+        }
+         h2{
+            font-size: 40px;
+            color: #fff;
+            padding:  10px 20px;
+        }
+        button{
+            border: 2px solid #333;
+            font-size: 40px;
+            background-color:  #017143;
+            color: #fff;
+            padding:  10px 20px;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="intro">
+            <h1>Kon Khayega Asscream ?</h1>
+            <br><br>
+            <h2></h2>
+            <br><br>
+            <button onclick="change()">Click Me</button>
+        </div>
+    </section>
+    <script>
+        function change()
+        {
+            let heading=document.querySelector('h2');
+            heading.innerHTML=Math.floor(1+(5-1)*Math.random());
+        }
+    </script>
+</body>
+</html>

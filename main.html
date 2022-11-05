@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        header{
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+        header ul{
+            margin-top: 15px;
+        }
+        header .one{
+            display: flex;
+            justify-content: space-between;
+        }
+        header .one li{
+            list-style: none;
+            padding: 5px 15px;
+            margin-left: 30px;
+        }
+        header .two{
+            display: flex;
+            justify-content: space-between;
+        }
+        header .two li{
+            list-style: none;
+            margin-right: 60px;
+        }
+        header .two li a{
+            display: inline-block;
+            transform: scale(0.6);
+        }
+        .content{
+            position: relative;
+            width: 100%;
+        }
+        .bgimage{
+            position: absolute;
+            background-image: url('bg.jpeg');
+            background-position:right;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            opacity: .8;
+        }
+        .navbar{
+            background-color: rgb(21, 21, 21);
+            position: absolute;
+            top:60px;
+            left: 150px;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 30px;
+            padding: 0px 100px;
+        }
+        .navbar img{
+            width: 30px;
+            margin-left: 30px;
+        }
+        .navbar ul{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar ul li{
+            color: #fff;
+            list-style: none;
+            padding: 15px 25px;
+            margin-left: 40px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+       .navbar ul li:hover{
+        background-color: rgba(211, 208, 208, 0.84);
+       }
+       .content{
+       /* border: 2px solid black;*/
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .content .text {
+        /* border: 2px solid black;*/
+         width: 600px;
+       }
+       .content .text h4{
+        color: #fff;
+        font-weight: 500;
+        font-size: 25px;
+       }
+       .content .text h1{
+        color: #fff;
+        font-weight: 500;
+        font-size: 35px;
+       }
+       .content .text span{
+        color: #fff;
+        font-weight: 900;
+        font-size: 4rem;
+       }
+       .content .text p{
+        color: #fff;
+       }
+       .content .text a{
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 23px;
+        margin-top: 30px;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        border: 0px;
+       }
+       #learn{
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 23px;
+        margin-top: 30px;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        border: 0px;
+        cursor: pointer;
+       }
+       .content .text input:hover{
+        color: black;
+        background-color: #fff;
+       }
+       .content .text a:hover{
+        color: black;
+        background-color: #fff;
+       }
+       #learn:hover{
+        color: black;
+        background-color: #fff;
+       }
+       .form1{
+       
+        width: 500px;
+       }
+       .register
+       {
+        color: #fff;
+        width: 100%;
+         border-radius: 40px;
+        margin: 0px 40px;
+        background-color:rgba(0, 0, 0, 0.5);
+        padding: 10px 0px;
+       }
+       .register h2{
+        text-align: center;
+        margin-top: 20px;
+       }
+       .register form{
+        margin: 0px 100px;
+        
+       }
+       #name{
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 7px;
+        background-color: #fff;
+      }
+      #submit{
+        color: #fff;
+       width: 200px;
+        padding: 7px;
+        font-size: 16px;
+        border-radius: 10px;
+        margin: 10px 0px;
+        border: none;
+        font-family: sans-serif;
+        cursor: pointer;
+        background-color: rgba(250,100,0,0.8);
+      }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="bgimage"></div>
+      <header> 
+        <ul class="one">
+            <li>🕿 +91(145)1112222</li>
+            <li>✉ sparkFoundation@gmail.com</li>
+        </ul>
+        <ul class="two">
+            <li><a href="#"><img src="twitter.png" alt="Failed To Load"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="Failed To Load"></a></li>
+            <li><a href="#"><img src="facebook.png" alt="Failed To Load"></a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text"> 
+            <h4>Get Started Today.</h4>
+            <h1>Help The Childern <br> <span> When They Needed</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ipsam veritatis consequatur. Quae, iure deleniti minus nesciunt rem ratione ea totam labore sed voluptate iste distinctio nisi recusandae cum sapiente.</p>
+            <form action="none.html" method="post">
+                <a href="payment.html">Donate Now</a>
+                <input type="submit" value="Learn More" id="learn">
+            </form>
+        </div>
+        <div class="form1">
+            <div class="register">
+            <h2 class="formHead">Register Here</h2>
+            <form action="none.html" method="post">
+                <label>First Name:</label><br>
+                <input type="text" name="fname" id="name" placeholder="Enter your name">
+                <br><br>
+                <label>Last Name:</label><br>
+                <input type="text" name="lname" id="name" placeholder="Enter your last name">
+                <br><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" id="name" placeholder="Enter your valid email">
+                <br><br>
+                <label>Phone Number:</label><br>
+                <input type="number" name="phone" id="name" placeholder="Enter phone number">
+                <br><br>
+                <input type="submit" value="submit" id="submit">
+            </form>
+            </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <img src="logo_small.png" alt="Failed To Load">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Pages</li>
+            <li>Contact</li>
+        </ul>    
+      </div>
+    </section>
+</body>
+</html>
